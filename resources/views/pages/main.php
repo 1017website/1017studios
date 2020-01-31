@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>1017 STUDIOS</title><meta property="og:site_name" content="1017 STUDIOS" />
+        <link rel='icon' href='/img/logo-navbar.png' type='image/x-icon'/>
         <meta property="og:title" content="Index" />
         <meta property="og:description" content="Jasa desain logo murah 081-938-64-65-60" />
         <meta property="og:image" content="https://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png" />
@@ -15,6 +16,7 @@
         <meta name="google-site-verification" content="o63PwbeCWP1PAKfmvNvyCNA1JpkeZw3AaFeMREgFrgU" />
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
         <link rel="stylesheet" type="text/css" href="/css/style.css">
     </head>
     <body>
@@ -44,6 +46,22 @@
             </div>
         </nav>
 
+        <div id="wrapper">
+            <div id="main">
+                <div class="image-home">
+                    <img src="/img/logo-home.png" height="200" class="logo-home" alt="1017studios logo home">
+                </div>
+                <div class="description-home">
+                    We create assets that make your brand stand out. Working with existing brands or helping start-ups,
+                    we work with you to design everything, build website for your product and 3D interior design.
+                </div>
+            </div>
+        </div>
+
+        <ul id="social_side_links">
+            <li><a class="social-media-button whatsapp" href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a class="social-media-button instagram" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
