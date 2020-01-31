@@ -1,26 +1,32 @@
-<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>1017 STUDIOS</title><meta property="og:site_name" content="1017 STUDIOS" />
+        <title>1017 STUDIOS</title>
         <link rel='icon' href='/img/logo-navbar.png' type='image/x-icon'/>
+        
+        <!--SEO-->
+        <meta property="og:site_name" content="1017 STUDIOS" />
         <meta property="og:title" content="Index" />
         <meta property="og:description" content="Jasa desain logo murah 081-938-64-65-60" />
         <meta property="og:image" content="https://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png" />
         <meta property="og:url" content="https://1017studios.com/" />
-        <link rel="icon" type="image/png" href="//www.weebly.com/uploads/reseller/assets/438585504-favicon.ico" />
         <meta name="description" content="Jasa desain logo murah 081-938-64-65-60" />
         <meta name="keywords" content="jasa desain logo murah ,jasa desain logo online, jasa desain logo sidoarjo jasa desain logo online shop, jasa desain logo makanan, jasa desain logo olshop, jasa desain logo perusahaan, jasa desain logo malang, ahli jasa desain logo, desain logo murah" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="google-site-verification" content="o63PwbeCWP1PAKfmvNvyCNA1JpkeZw3AaFeMREgFrgU" />
-        <!-- Bootstrap CSS -->
+        <!--SEO-->
+        
+        <!--load css-->
         <link href="/css/bootstrap.min.css" rel="stylesheet" type='text/css'>
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
         <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <!--load css-->
+    
     </head>
     <body>
-
+        
+        <!--navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-black">
             <div class="container">
             <a class="navbar-brand" href="#">
@@ -47,7 +53,9 @@
             </div>
             </div>
         </nav>
+        <!--navbar-->
 
+        <!--home-->
         <div id="wrapper">
             <div id="main">
                 <div class="image-home">
@@ -63,14 +71,18 @@
                 </div>
             </div>
         </div>
-
+        <!--home-->
+     
+        <!--social-media-->
         <ul id="social_side_links">
             <li><a class="social-media-button whatsapp" href="#" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
             <li><a class="social-media-button instagram" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
         </ul>
-
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!--social-media-->
+        
+        <!--load js-->
         <script type="text/javascript" src="/js/jquery.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <!--load js-->
     </body>
 </html>
