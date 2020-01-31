@@ -57,7 +57,7 @@
 
         <!--home-->
         <div id="wrapper">
-            <div id="main">
+            <div id="home">
                 <div class="image-home">
                     <img src="/img/logo-home.png" height="200" class="logo-home" alt="1017studios logo home">
                 </div>
@@ -72,6 +72,12 @@
             </div>
         </div>
         <!--home-->
+        
+        <!--profile-->
+        <div id="profile">
+            
+        </div>
+        <!--profile-->
      
         <!--social-media-->
         <ul id="social_side_links">
