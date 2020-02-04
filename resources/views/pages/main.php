@@ -83,6 +83,63 @@
                 <center>
                     <h1 class="bold">Portofolio</h1>
                     <h6 class="pt20">Graphic Design</h6>
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-md-12 d-flex justify-content-center mb-5">
+
+                            <button type="button" class="btn waves-effect filter bg-light" data-rel="all">All</button>
+                            <button type="button" class="btn waves-effect filter bg-light" data-rel="1">Mountains</button>
+                            <button type="button" class="btn waves-effect filter bg-light" data-rel="2">Sea</button>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="gallery" id="gallery">
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" alt="Card image cap">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 1">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 1">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg" alt="Card image cap">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 2">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg" alt="Card image cap">
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="mb-3 pics animation all 1">
+                            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
                 </center>
             </div>
 
@@ -98,6 +155,7 @@
         <!--load js-->
         <script type="text/javascript" src="/js/jquery.min.js"></script>
         <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/js/function.js"></script>
         <!--load js-->
     </body>
 </html>
