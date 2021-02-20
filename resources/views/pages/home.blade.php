@@ -204,7 +204,7 @@
 
 </div>
 
-<div class="streak streak-photo streak-md about-home" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
+<div class="streak streak-photo streak-md about-home mb3" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
     <div class="container flex-center mask">
         <div class="text-left white-text">
             <h3 class="h2-responsive about-home-title">
@@ -232,6 +232,66 @@
         </div>
     </div>
 </div>
+
+<div class="superior-home">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mb2">
+                <img src="/1017studios/img/default-superior-1.png" class="img-fluid img-superior" alt="">
+                <div class="text-superior">
+                    Desainer dan Developer
+                </div>
+                <div class="text-superior-2">
+                    Senior & Profesional
+                </div>
+            </div>
+            <div class="col-sm-6 mb2">
+                <img src="/1017studios/img/default-superior-2.png" class="img-fluid img-superior" alt="">
+                <div class="text-superior">
+                    Proses Pengerjaan
+                </div>
+                <div class="text-superior-2">
+                    Cepat & Tepat Waktu
+                </div>
+            </div>
+            <div class="col-sm-6 mb2">
+                <img src="/1017studios/img/default-superior-3.png" class="img-fluid img-superior" alt="">
+                <div class="text-superior">
+                    Konsultasi
+                </div>
+                <div class="text-superior-2">
+                    Gratis & Solutif
+                </div>
+            </div>
+            <div class="col-sm-6 mb2">
+                <img src="/1017studios/img/default-superior-4.png" class="img-fluid img-superior" alt="">
+                <div class="text-superior">
+                    Output
+                </div>
+                <div class="text-superior-2">
+                    Master File / Akses (Website)
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="streak streak-photo streak-md about-home" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
+    <div class="container flex-center mask">
+        <h3 class="h2-responsive about-home-title">
+            FAQ
+        </h3>
+
+    </div>
+</div>
+
+<div class="button-center">
+    <a href="#" class="btn btn-rounded font-weight-bold ml-lg-0 wow fadeInLeft button-header" data-wow-delay="0.3s">
+        SAYA MAU PESAN !!
+    </a>
+</div>
+
+
 
 @endsection
 
