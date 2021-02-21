@@ -204,7 +204,7 @@
 
 </div>
 
-<div class="streak streak-photo streak-md about-home mb3" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
+<div class="streak streak-md about-home mb3" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
     <div class="container flex-center mask">
         <div class="text-left white-text">
             <h3 class="h2-responsive about-home-title">
@@ -276,22 +276,114 @@
     </div>
 </div>
 
-<div class="streak streak-photo streak-md about-home" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
+<div class="streak streak-md about-home" style="background-image: url('https://1017studio.com/1017studios/img/default-about.jpg');">
     <div class="container flex-center mask">
-        <h3 class="h2-responsive about-home-title">
-            FAQ
-        </h3>
+        <div class="text-left white-text">
+            <h3 class="h2-responsive about-superior-title-1">
+                FAQ
+            </h3>
+            <h3 class="h2-responsive about-superior-title-2">
+                Pertanyaan yang sering diajukan
+            </h3>
 
+            <div class="superior-desc">
+                <table>
+                    <tr>
+                        <td class="about-superior-desc-1 pr1">+</td>
+                        <td class="about-superior-desc-1">Bagaimana cara pemesanan</td>
+                    </tr>
+                    <tr>
+                        <td class="about-superior-desc-2"></td>
+                        <td class="about-superior-desc-2">Tekan tombol SAYA MAU PESAN atau hubungi kami melalui Whatsapp melalui icon Whatsapp.</td>
+                    </tr>
+
+                    <tr>
+                        <td class="about-superior-desc-1 pr1">+</td>
+                        <td class="about-superior-desc-1">Bagaimana cara pembayaran</td>
+                    </tr>
+                    <tr>
+                        <td class="about-superior-desc-2"></td>
+                        <td class="about-superior-desc-2">Pengerjaan akan dimulai setelah kami menerima pembayaran DP sebesar 50% dari klien.
+                            Hasil kerja final yang sudah melewati proses revisi–akan dikirimkan setelah kami menerima pelunasan.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="about-superior-desc-1 pr1">+</td>
+                        <td class="about-superior-desc-1">Bagaimana apabila hasil kurang cocok</td>
+                    </tr>
+                    <tr>
+                        <td class="about-superior-desc-2"></td>
+                        <td class="about-superior-desc-2">Anda mendapatkan fasilitas / garansi revisi sesuai dengan paket desain yang dipilih. Kami selalu
+                            berkomitmen dan berusaha untuk memberikan solusi dan hasil terbaik untuk kebutuhan anda.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="about-superior-desc-1 pr1">+</td>
+                        <td class="about-superior-desc-1">Bagaimana apabila saya ingin membatalkan project yang sedang berjalan?</td>
+                    </tr>
+                    <tr>
+                        <td class="about-superior-desc-2"></td>
+                        <td class="about-superior-desc-2">Ketentuan untuk tidak melanjutkan project karena alasan apapun, cukup infokan ke kami untuk
+                            menghentikan project ini. Kamu tidak perlu melunasi sisa biaya yang belum terbayar.
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="about-superior-desc-1 pr1">+</td>
+                        <td class="about-superior-desc-1">Apakah bisa merubah project yang sedang berjalan dan mengganti dengan yang baru?</td>
+                    </tr>
+                    <tr>
+                        <td class="about-superior-desc-2"></td>
+                        <td class="about-superior-desc-2">Project yang sedang berjalan akan dianggap batal dan tidak harus membayar kekurangan biaya yang
+                            belum terbayar. Untuk project yang baru, anda harus memesan kembali paket desain sesuai kebutuhan.
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
     </div>
 </div>
 
-<div class="button-center">
-    <a href="#" class="btn btn-rounded font-weight-bold ml-lg-0 wow fadeInLeft button-header" data-wow-delay="0.3s">
-        SAYA MAU PESAN !!
-    </a>
+<div class="mb2">
+    <div class="button-center">
+        <a href="#" class="btn btn-rounded font-weight-bold ml-lg-0 wow fadeInLeft button-header" data-wow-delay="0.3s">
+            SAYA MAU PESAN !!
+        </a>
+    </div>
 </div>
 
+<footer class="page-footer footer-tiles text-center text-md-left pt-4 mt-4">
+    <div class="container mt-1 mb-2">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 mt-2 mb-1 text-center">
+                <img src="/1017studios/img/logo.png" class="img-fluid img-footer" alt="">
+                <p class="text-footer">berdiri sejak 2014 <br> lebih dari 2000 klien</p>
+            </div>
 
+            <div class="col-xl-3 ml-auto col-lg-4 mt-2 mb-1 col-md-6 text-center">
+
+            </div>
+
+            <div class="col-xl-3 ml-auto col-lg-4 mt-2 mb-1 col-md-6 text-center">
+                <div class="footer-socials">
+                    <a type="button" class="btn-floating yellow"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a type="button" class="btn-floating yellow"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a type="button" class="btn-floating yellow"><i class="fab fa-whatsapp fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright py-3 text-center wow fadeIn text-footer" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            © 2021 Copyright: <a href="#" target="_blank"> 1017Studio.com </a>
+        </div>
+    </div>
+
+</footer>
 
 @endsection
 
