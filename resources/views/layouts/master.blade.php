@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <!--SEO-->
         <meta charset="utf-8">
@@ -13,10 +13,10 @@
         <title>1017 Studios</title>
 
         <!--CSS-->
-        <link rel='icon' href='/1017studios/img/favicon.png' type='image/x-icon'>
-        <link href="/1017studios/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/1017studios/css/mdb.min.css" rel="stylesheet">
-        <link href="/1017studios/css/style.css" type="text/css" rel="stylesheet">
+        <link rel='icon' href='{{asset('1017studios/img/favicon.png')}}' type='image/x-icon'>
+        <link href="{{asset('1017studios/css/bootstrap.min.css')}}" rel="stylesheet">
+        <link href="{{asset('1017studios/css/mdb.min.css')}}" rel="stylesheet">
+        <link href="{{asset('1017studios/css/style.css')}}" type="text/css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css" type="text/css" rel="stylesheet">
         <!--CSS-->
 
@@ -26,11 +26,11 @@
         <!--Font-->
 
         <!--Js-->
-        <script type="text/javascript" src="/1017studios/js/jquery-3.4.1.min.js"></script>
-        <script type="text/javascript" src="/1017studios/js/popper.min.js"></script>
-        <script type="text/javascript" src="/1017studios/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="/1017studios/js/mdb.min.js"></script>
-        <script type="text/javascript" src="/1017studios/js/function.js"></script>
+        <script type="text/javascript" src="{{asset('1017studios/js/jquery-3.4.1.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('1017studios/js/popper.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('1017studios/js/bootstrap.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('1017studios/js/mdb.min.js')}}"></script>
+        <script type="text/javascript" src="{{asset('1017studios/js/function.js')}}"></script>
         <!--Js-->
     </head>
     <body>
