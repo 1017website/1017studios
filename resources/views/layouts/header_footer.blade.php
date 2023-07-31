@@ -26,7 +26,6 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/popper.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/mdb.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/function.js') }}"></script>
@@ -300,7 +299,6 @@
     
     <script src="/js/tw-elements.umd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
     <script>
         AOS.init();
     // Burger menus
