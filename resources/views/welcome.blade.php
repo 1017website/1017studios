@@ -11,14 +11,13 @@
     <meta property="og:url" content="">
     <meta name="keywords" content="">
     <script type="text/javascript" async="" src=""></script>
-    <link rel='icon' href='{{ asset(' assets/img/favicon.png') }}'>
+    <link rel='icon' type="image/x-icon"  href='{{ asset('assets/img/favicon.ico') }}'>
     <title>1017 Studios</title>
 
     <!--CSS-->
     {{-- @vite('resources/css/app.css') --}}
 
     {{-- <link rel="preload" as="style" href="http://127.0.0.1:8000/build/assets/app-bcad442f.css" /><link rel="stylesheet" href="http://127.0.0.1:8000/build/assets/app-bcad442f.css" /> --}}
-
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -124,6 +123,10 @@
                             <div class="space-x-3 hidden lg:flex">
                                 <ul
                                     class="w-full h-auto flex flex-col flex-grow lg:items-center pb-4 lg:pb-0 lg:justify-end lg:flex-row origin-top duration-300 xl:space-x-2 space-y-3 lg:space-y-0 hidden lg:flex">
+                                    <li class="w-25"><a href="{{url('/')}}"
+                                        class="md:px-2 py-2 font-light text-xl bg-transparent rounded-lg text-white hover:text-[#FFE200] duration-500 focus:outline-none focus:shadow-outline">
+                                        Home
+                                    </a></li>
                                     <li class="w-25"><a href="{{url('/portofolio')}}"
                                             class="md:px-2 py-2 font-light text-xl bg-transparent rounded-lg text-white hover:text-[#FFE200] duration-500 focus:outline-none focus:shadow-outline">
                                             Portofolio
@@ -167,6 +170,10 @@
                             </div>
                             <div>
                                 <ul>
+                                    <li class="mb-1">
+                                        <a class="block p-4 text-sm font-bold text-black hover:bg-black hover:text-white hover:shadow-md rounded duration-300"
+                                            href="{{url('/')}}">Home</a>
+                                    </li>
                                     <li class="mb-1">
                                         <a class="block p-4 text-sm font-bold text-black hover:bg-black hover:text-white hover:shadow-md rounded duration-300"
                                             href="{{url('/portofolio')}}">Portofolio</a>
@@ -568,10 +575,15 @@
                             </section>
                         </div>
                     </div>
-
-                    <div class="fixed bottom-20 right-10 z-10">
-                        <a title="Follow me on Twitter" href="#" target="_blank"
-                            class="block rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+                    <button type="button" data-te-ripple-init="" data-te-ripple-color="light" class="fixed bottom-5 right-10 rounded-full bg-[#FFE200] p-3 text-xs font-medium uppercase leading-tight text-black shadow-md transition duration-150 ease-in-out hover:bg-black hover:text-[#FFE200] hover:shadow-lg focus:bg-[#FFE200] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#FFE200] active:shadow-lg" id="btn-back-to-top" style="">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-6 w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                          <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
+                        </svg>
+                      </button>
+                    
+                    <div class="fixed top-40 right-10 z-10">
+                        <a title="Chat Whatsapp" href="#" target="_blank"
+                            class="block rounded-full transition-all shadow transform hover:scale-110 hover:rotate-12">
                             <img class="object-cover object-center lg:w-36 lg:h-36 w-16 h-16"
                                 src="{{ asset('assets/img/order.png') }}" alt="Saya mau pesan">
                         </a>
@@ -652,6 +664,7 @@
             </div>
         {{-- </div> --}}
     </div>
+    <script src="/js/tw-elements.umd.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -732,6 +745,26 @@
   loader.style.display = 'none';
   content.style.display = 'block';
 });
+
+// Back to top
+const mybutton = document.getElementById("btn-back-to-top");
+    
+      const scrollFunction = () => {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.classList.remove("hidden");
+        } else {
+          mybutton.classList.add("hidden");
+        }
+      };
+      const backToTop = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
+      mybutton.addEventListener("click", backToTop);
+    
+      window.addEventListener("scroll", scrollFunction);
   
     </script>
 

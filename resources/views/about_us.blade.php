@@ -46,7 +46,7 @@
             <div data-aos="zoom-out-up" data-aos-duration="1000"
                 class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 place-content-center sm:space-x-6 pt-3 mt-2 aos-init aos-animate">
                 <button
-                    class="lg:text-2xl duration-300 hover:scale-125 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
+                    class="lg:text-2xl duration-300 hover:scale-105 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
                     fdprocessedid="rdwmjd">
                     SAYA MAU PESAN !!
                 </button>
