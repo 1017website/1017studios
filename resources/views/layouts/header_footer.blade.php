@@ -205,13 +205,13 @@
                         @yield('content')
                     </div>
 
-                    <button type="button" data-te-ripple-init="" data-te-ripple-color="light" class="fixed bottom-5 right-10 rounded-full bg-[#FFE200] p-3 text-xs font-medium uppercase leading-tight text-black shadow-md transition duration-150 ease-in-out hover:bg-black hover:text-[#FFE200] hover:shadow-lg focus:bg-[#FFE200] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#FFE200] active:shadow-lg" id="btn-back-to-top" style="">
+                    {{-- <button type="button" data-te-ripple-init="" data-te-ripple-color="light" class="fixed bottom-5 right-10 rounded-full bg-[#FFE200] p-3 text-xs font-medium uppercase leading-tight text-black shadow-md transition duration-150 ease-in-out hover:bg-black hover:text-[#FFE200] hover:shadow-lg focus:bg-[#FFE200] focus:shadow-lg focus:outline-none focus:ring-0 active:bg-[#FFE200] active:shadow-lg" id="btn-back-to-top" style="">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-6 w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                           <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
                         </svg>
-                      </button>
+                      </button> --}}
                     
-                    <div class="fixed top-40 right-10 z-10">
+                    <div class="fixed bottom-20 right-10 z-10">
                         <a title="Chat Whatsapp" href="#" target="_blank"
                             class="block rounded-full transition-all shadow transform hover:scale-110 hover:rotate-12">
                             <img class="object-cover object-center lg:w-36 lg:h-36 w-16 h-16"
@@ -389,24 +389,24 @@
       item.classList.add('active'); // Add the 'active' class to the matching link
     }
   });
-  const mybutton = document.getElementById("btn-back-to-top");
+//   const mybutton = document.getElementById("btn-back-to-top");
     
-    const scrollFunction = () => {
-      if (
-        document.body.scrollTop > 20 ||
-        document.documentElement.scrollTop > 20
-      ) {
-        mybutton.classList.remove("hidden");
-      } else {
-        mybutton.classList.add("hidden");
-      }
-    };
-    const backToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
-    mybutton.addEventListener("click", backToTop);
+//     const scrollFunction = () => {
+//       if (
+//         document.body.scrollTop > 20 ||
+//         document.documentElement.scrollTop > 20
+//       ) {
+//         mybutton.classList.remove("hidden");
+//       } else {
+//         mybutton.classList.add("hidden");
+//       }
+//     };
+//     const backToTop = () => {
+//       window.scrollTo({ top: 0, behavior: "smooth" });
+//     };
+//     mybutton.addEventListener("click", backToTop);
   
-    window.addEventListener("scroll", scrollFunction);
+//     window.addEventListener("scroll", scrollFunction);
     </script>
 
 </body>

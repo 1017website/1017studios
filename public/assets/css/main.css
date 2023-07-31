@@ -2948,6 +2948,10 @@ details.collapse summary::-webkit-details-marker {
     bottom: 0
 }
 
+.bottom-20 {
+    bottom: 5rem
+}
+
 .bottom-5 {
     bottom: 1.25rem
 }
@@ -2962,10 +2966,6 @@ details.collapse summary::-webkit-details-marker {
 
 .top-0 {
     top: 0
-}
-
-.top-40 {
-    top: 10rem
 }
 
 .z-10 {
