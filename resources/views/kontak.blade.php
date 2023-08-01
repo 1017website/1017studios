@@ -27,7 +27,52 @@
                 </h2>
             </div>
             <div class="grid items-center gap-4 xl:grid-cols-5">
-                <div class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left"
+                <div class="mt-4 xl:mt-5 space-y-6 px-4 lg:px-4" data-aos="zoom-out-up" data-aos-duration="1000">
+                    <p class="font-semibold text-white sm:text-xl">Tinggalkan pesan disini</p>
+                    <form action="#" class="space-y-8">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="md:mr-2 mb-2 md:mb-0 w-full">
+                                <label for="first_name"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First
+                                    Name</label>
+                                <input type="name" id="first_name"
+                                    class="input input-bordered input-warning w-full max-w-xs" placeholder="first"
+                                    required />
+                            </div>
+                            <div class="md:ml-2 w-full">
+                                <label for="last_name"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last
+                                    Name</label>
+                                <input type="name" id="last_name"
+                                    class="input input-bordered input-warning w-full max-w-xs" placeholder="last"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <label for="email"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
+                            <input type="email" id="email" class="input input-bordered input-warning w-full max-w-xl"
+                                placeholder="example@gmail.com" required>
+                        </div>
+                        <div class="w-full">
+                            <label for="number"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nomor
+                                Telepon/Whatsapp</label>
+                            <input type="telephone" id="telephone"
+                                class="input input-bordered input-warning w-full max-w-xl" placeholder="+62 000 000 000"
+                                required>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Pesan</label>
+                            <textarea class="textarea textarea-warning w-full"
+                                placeholder="Tinggalkan pesan disini"></textarea>
+                        </div>
+                        <button
+                            class="btn btn-warning w-full bg-[#FFE200] font-extrabold text-black hover:bg-[#c79305] border-none duration-500">SUBMIT</button>
+                    </form>
+                </div>
+                {{-- <div class="max-w-2xl mx-auto my-8 space-y-4 text-center xl:col-span-2 xl:text-left"
                     data-aos="zoom-out-up" data-aos-duration="1000">
                     <h2 class="lg:text-5xl text-2xl text-[#FFE200] font-extrabold sm:pr-8 xl:pr-12">Testimoni</h2>
                     <p class="paragraph text-white lg:text-xl text-justify ">Impresi mereka terhadap kami</p>
@@ -41,7 +86,7 @@
                             </a>
                         </blockquote>
                     </div>
-                </div>
+                </div> --}}
                 <div class="p-6 xl:col-span-3">
                     <div class="grid gap-4 md:grid-cols-2">
                         <div class="grid content-center gap-4">
