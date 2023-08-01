@@ -4039,10 +4039,6 @@ details.collapse summary::-webkit-details-marker {
         width: 33.333333%
     }
 
-    .sm\:grid-cols-1 {
-        grid-template-columns: repeat(1, minmax(0, 1fr))
-    }
-
     .sm\:flex-row {
         flex-direction: row
     }
@@ -4212,10 +4208,6 @@ details.collapse summary::-webkit-details-marker {
     .lg\:-translate-y-12 {
         --tw-translate-y: -3rem;
         transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-    }
-
-    .lg\:grid-cols-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr))
     }
 
     .lg\:flex-row {
