@@ -26,7 +26,7 @@
                     Kontak
                 </h2>
             </div>
-            <div class="sm:grid-cols-1 grid lg:grid-cols-2 xl:grid-cols-2 gap-4">
+            {{-- <div class="sm:grid-cols-1 grid lg:grid-cols-2 xl:grid-cols-2 gap-4">
                 <div class="mt-4 xl:mt-5 space-y-6 px-4 lg:px-4" data-aos="zoom-out-up" data-aos-duration="1000">
                     <p class="font-semibold text-white sm:text-xl">Tinggalkan pesan disini</p>
                     <form action="#" class="space-y-8">
@@ -105,7 +105,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
