@@ -7,9 +7,7 @@
             <h2 class="lg:text-5xl text-2xl text-[#FFE200] font-extrabold sm:pr-8 xl:pr-12"="">
                 Detail Berita
             </h2>
-            <hr class="h-3 my-4 bg-[#FFE200] rounded">
-            <hr class="h-3 my-4 bg-[#FFE200] rounded">
-
+            <hr class="rounded" style="height:10;width:150;color:#FFE200;">
             <div class="m-5">
                 <a rel="noopener noreferrer" href="{{ url()->previous() }}"
                     class="bg-[#FFE200] hover:bg-[#FFE200] text-black font-bold py-2 px-4 rounded-full p-1 hover:underline"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</a>
