@@ -29,46 +29,48 @@
             <div class="grid-cols-1 grid lg:grid-cols-2 gap-4">
                 <div class="mt-4 xl:mt-5 space-y-6 px-4 lg:px-4" data-aos="zoom-out-up" data-aos-duration="1000">
                     <p class="font-semibold text-white sm:text-xl">Tinggalkan pesan disini</p>
-                    <form action="#" class="space-y-8">
+                    <form action="{{ route('kontak.store') }}" class="space-y-8" method="POST">
+                        @csrf
                         <div class="flex flex-col md:flex-row">
                             <div class="md:mr-2 mb-2 md:mb-0 w-full">
                                 <label for="first_name"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First
                                     Name</label>
-                                <input type="name" id="first_name"
+                                <input type="text" name="first_name" id="first_name"
                                     class="input input-bordered input-warning w-full max-w-xs" placeholder="first"
-                                    required />
+                                    required>
                             </div>
                             <div class="md:ml-2 w-full">
                                 <label for="last_name"
                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last
                                     Name</label>
-                                <input type="name" id="last_name"
+                                <input type="text" name="last_name" id="last_name"
                                     class="input input-bordered input-warning w-full max-w-xs" placeholder="last"
-                                    required />
+                                    required>
                             </div>
                         </div>
                         <div class="w-full">
                             <label for="email"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-                            <input type="email" id="email" class="input input-bordered input-warning w-full max-w-xl"
+                            <input type="email" name="email" id="email"
+                                class="input input-bordered input-warning w-full max-w-xl"
                                 placeholder="example@gmail.com" required>
                         </div>
                         <div class="w-full">
-                            <label for="number"
+                            <label for="nomor_wa"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nomor
                                 Telepon/Whatsapp</label>
-                            <input type="telephone" id="telephone"
+                            <input type="text" name="nomor_wa" id="nomor_wa"
                                 class="input input-bordered input-warning w-full max-w-xl" placeholder="+62 000 000 000"
                                 required>
                         </div>
                         <div class="sm:col-span-2">
-                            <label for="message"
+                            <label for="pesan"
                                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Pesan</label>
-                            <textarea class="textarea textarea-warning w-full"
-                                placeholder="Tinggalkan pesan disini"></textarea>
+                            <textarea name="pesan" id="pesan" class="textarea textarea-warning w-full"
+                                placeholder="Tinggalkan pesan disini" required></textarea>
                         </div>
-                        <button
+                        <button type="submit"
                             class="btn btn-warning w-full bg-[#FFE200] font-extrabold text-black hover:bg-[#c79305] border-none duration-500">SUBMIT</button>
                     </form>
                 </div>
@@ -91,10 +93,10 @@
                                 <p class="mb-8 lg:mb-16 font-semibold text-white sm:text-xl"><i
                                         class="fa fa-caret-down text-white text-2xl mr-2" aria-hidden="true"></i>Klik
                                     button di bawah ini untuk konsultasi desain</p>
-                                <button
+                                <a href="https://api.whatsapp.com/send?phone=6281938646560"
                                     class="btn btn-warning w-full bg-[#FFE200] font-extrabold text-black hover:bg-[#c79305] border-none duration-500">Konsultasi
                                     Desain
-                                </button>
+                                </a>
                                 <div class="map-container">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7914.8693808254975!2d112.782346!3d-7.304963000000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7faf5f5654195%3A0x240bfb7744077396!2sJunior%20High%20School%20State%2052%20of%20SURABAYA!5e0!3m2!1sen!2sid!4v1690790159441!5m2!1sen!2sid"

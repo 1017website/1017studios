@@ -25,14 +25,4 @@ class WelcomeController extends Controller
     {
         return view('testimoni', []);
     }
-
-    public function kontak()
-    {
-        return view('kontak', []);
-    }
-
-    public function berita()
-    {
-        return view('berita', []);
-    }
 }

@@ -10,7 +10,6 @@
     <meta property="og:description" content="">
     <meta property="og:url" content="">
     <meta name="keywords" content="">
-    <script type="text/javascript" async="" src=""></script>
     <link rel='icon' type="image/x-icon" href='{{ asset(' assets/img/favicon.ico') }}'>
     <title>1017 Studios</title>
 
@@ -83,14 +82,41 @@
             opacity: 0.8;
             /* Set the desired opacity value when scrolling */
         }
+        .loader {
+            border-top-color: #FFE200;
+            -webkit-animation: spinner 1.5s linear infinite;
+            animation: spinner 1.5s linear infinite;
+        }
+
+        @-webkit-keyframes spinner {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
 <body class="bg-white">
-    {{-- <div id="loader" class="flex items-center justify-center h-screen bg-black">
-        <div class="loader animate-spin-slow rounded-full border-t-4 border-[#3498db] border-solid h-16 w-16"></div>
+    <div id="loader" wire:loading
+        class="fixed top-0 left-0 right-0 bottom-0 w-full h-screen z-50 overflow-hidden bg-black flex flex-col items-center justify-center">
+        <div class="loader ease-linear rounded-full border-4 border-t-4 border-gray-200 h-12 w-12 mb-4"></div>
+        <h2 class="text-center text-white text-xl font-extrabold">Loading...</h2>
+        <p class="text-xl text-center font-extrabold text-[#FFE200]">- 1017 studios -</p>
     </div>
-    <div id="content" class="hidden"> --}}
         <div id="__layout">
             <div class="min-h-screen font-sans antialiased relative">
                 <div class="relative">
@@ -221,17 +247,17 @@
                                         <div
                                             class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-6 pt-1 pb-1 mt-2 aos-init aos-animate">
                                             <a data-aos="fade-down" data-aos-once="true" data-aos-delay="300"
+                                                href="{{url('/about_us')}}"
                                                 class="lg:text-sm text-sm font-light text-white paragraph sm:block aos-init aos-animate hover:text-[#FFE200] duration-500">
                                                 Baca Selengkapnya...
                                             </a>
                                         </div>
                                         <div data-aos="fade-up" data-aos-once="true" data-aos-delay="700"
                                             class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 sm:space-x-6 pt-3 pb-3 mt-2 aos-init aos-animate">
-                                            <button
-                                                class="lg:text-2xl duration-300 hover:scale-125 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
-                                                fdprocessedid="rdwmjd">
+                                            <a class="lg:text-2xl duration-300 hover:scale-125 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
+                                                href="{{url('/kontak')}}">
                                                 SAYA MAU PESAN !!
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                     <div
@@ -331,7 +357,7 @@
                                     </div>
                                     <div
                                         class="flex flex-col sm:flex-row mt-7 items-center justify-center space-y-6 sm:space-y-0">
-                                        <div data-aos="zoom-out-up" data-aos-duration="3000"
+                                        <div
                                             class="flex flex-wrap justify-center space-y-6 sm:space-y-0 sm:space-x-6 pt-3 pb-3 mt-2 aos-init aos-animate">
                                             <button type="button"
                                                 class="hidden filter-btn lg:text-lg duration-300 font-extrabold shadow-md hover:shadow-xl text-center rounded-full lg:w-[200px] px-6 py-4 bg-[#FFE200] text-black"
@@ -416,9 +442,9 @@
                                     </div>
                                 </div>
                             </section>
-                            <section class="w-full my-24"="">
+                            <section class="w-full my-24">
                                 <div
-                                    class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] transform lg:-translate-y-12">
+                                    class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0 py-6 sm:py-8 rounded-[2.25rem] transform lg:-translate-y-12">
                                     <div
                                         class="flex flex-col flex-wrap sm:flex-row items-center justify-center space-y-6 mt-50 sm:space-y-0 -mx-4">
                                         <div data-aos="fade-down-right" data-aos-duration="1000"
@@ -450,14 +476,6 @@
                                             <p class="font-extrabold text-2xl text-center">Master File / Akses (Website)
                                             </p>
                                         </div>
-                                    </div>
-                                    <div data-aos="zoom-out-up" data-aos-duration="3000"
-                                        class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 place-content-center p-10 sm:space-x-6 pt-3 pb-3 mt-2 aos-init aos-animate">
-                                        <button
-                                            class="lg:text-2xl duration-300 hover:scale-125 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
-                                            fdprocessedid="rdwmjd">
-                                            SAYA MAU PESAN !!
-                                        </button>
                                     </div>
                                 </div>
                             </section>
@@ -565,11 +583,10 @@
                                     class="flex flex-col flex-wrap sm:flex-row items-center justify-center space-y-6 mt-50 sm:space-y-0">
                                     <div data-aos="zoom-out-up" data-aos-duration="2000"
                                         class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 place-content-center p-10 sm:space-x-6 lg:pt-3 lg:pb-3 mt-2 aos-init aos-animate">
-                                        <button
-                                            class="lg:text-2xl duration-300 hover:scale-125 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
-                                            fdprocessedid="rdwmjd">
+                                        <a class="lg:text-2xl duration-300 hover:scale-125 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
+                                            href="{{url('/kontak')}}">
                                             SAYA MAU PESAN !!
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </section>
@@ -581,10 +598,10 @@
                             class="hidden fixed z-90 border-0 w-16 h-16 rounded-full drop-shadow-md bg-[#FFE200] text-black text-3xl font-bold">&uarr;</button>
                     </div>
 
-                    <div class="fixed bottom-20 right-10 z-10">
-                        <a title="Chat Whatsapp" href="#" target="_blank"
+                    <div class="fixed bottom-10 right-10 z-10">
+                        <a title="Chat Whatsapp" href="{{url('/kontak')}}" target="_blank"
                             class="block rounded-full transition-all shadow transform hover:scale-110 hover:rotate-12">
-                            <img class="object-cover object-center lg:w-36 lg:h-36 w-16 h-16"
+                            <img class="object-cover object-center lg:w-36 lg:h-36 w-24 h-24"
                                 src="{{ asset('assets/img/order.png') }}" alt="Saya mau pesan">
                         </a>
                     </div>
@@ -611,15 +628,15 @@
                                             <ul class="list-unstyled">
                                                 <li>
                                                     <a class="text-white hover:text-blueGray-800 font-bold block pb-2 text-xl"
-                                                        href="#">Berita</a>
+                                                        href="{{url('/berita')}}">Berita</a>
                                                 </li>
                                                 <li>
                                                     <a class="text-white hover:text-blueGray-800 font-bold block pb-2 text-xl"
-                                                        href="#">Portofolio</a>
+                                                        href="{{url('/portofolio')}}">Portofolio</a>
                                                 </li>
                                                 <li>
                                                     <a class="font-bold block pb-2 text-xl" style="color:#FFE200"
-                                                        href="#">Saya mau pesan</a>
+                                                        href="{{url('/kontak')}}">Saya mau pesan</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -630,7 +647,7 @@
                                                     <i class="fab fa-whatsapp text-white text-2xl mr-2"
                                                         aria-hidden="true"></i>
                                                     <a class="text-white hover:text-blueGray-800 font-bold block pb-2 text-xl lg:text-right"
-                                                        href="tel:081938646560">081 938 64 6560</a>
+                                                        href="https://api.whatsapp.com/send?phone=6281938646560">081 938 64 6560</a>
                                                 </li>
                                                 <li class="flex items-center lg:justify-end">
                                                     <i class="fab fa-instagram text-white text-2xl mr-2"></i>
@@ -654,7 +671,7 @@
                             <div class="flex flex-wrap items-center md:justify-between justify-center">
                                 <div class="w-full md:w-4/12 px-4 mx-auto text-center">
                                     <div class="text-sm text-white font-semibold py-1">
-                                        © 2021 Copyright 1017studios All Right reserved
+                                        © 2023 Copyright 1017studios All Right reserved
                                     </div>
                                 </div>
                             </div>
@@ -662,14 +679,13 @@
                     </footer>
                 </div>
             </div>
-            {{--
-        </div> --}}
+        </div>
     </div>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
         // Burger menus
-    document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
         // open
         const burger = document.querySelectorAll('.navbar-burger');
         const menu = document.querySelectorAll('.navbar-menu');
@@ -707,27 +723,26 @@
                 });
             }
         }
-    });
-    $(document).ready(function() {
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > 0) {
+        });
+        $(document).ready(function() {
+        $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
         $('#navbar').addClass('scrolled');
-      } else {
-        $('#navbar').removeClass('scrolled');
-      }
-    });
-  });
+        } else {
+         $('#navbar').removeClass('scrolled');
+        }
+        });
+        });
     </script>
 
     <script>
         const filterButtons = document.querySelectorAll('.filter-btn');
-  const portfolioItems = document.querySelectorAll('.portfolio-item');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
 
-  filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
+        filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
       const filterValue = button.dataset.filter;
 
-      // Rearrange the grid layout based on the filter
       portfolioItems.forEach(item => {
         if (filterValue === 'all' || item.classList.contains(filterValue)) {
           item.style.display = 'block';
@@ -735,23 +750,20 @@
           item.style.display = 'none';
         }
       });
+        });
     });
-  });
-  window.addEventListener('load', function () {
-  const loader = document.getElementById('loader');
-  const content = document.getElementById('content');
+    window.addEventListener('load', function () {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
 
-  // Hide the loader and show the content when the page is fully loaded
-  loader.style.display = 'none';
-  content.style.display = 'block';
-});
+    loader.style.display = 'none';
+    content.style.display = 'block';
+    });
 
   
     </script>
     <script>
         var toTopButton = document.getElementById("to-top-button");
-
-        // When the user scrolls down 200px from the top of the document, show the button
         window.onscroll = function () {
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 toTopButton.classList.remove("hidden");
@@ -759,8 +771,6 @@
                 toTopButton.classList.add("hidden");
             }
         }
-
-        // When the user clicks on the button, scroll to the top of the document
         function goToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }

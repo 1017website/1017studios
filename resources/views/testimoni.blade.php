@@ -12,7 +12,8 @@
                         class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 place-content-center sm:space-x-6 pt-3 mt-2 aos-init aos-animate">
                         <blockquote data-aos="zoom-out-up" data-aos-duration="1000"
                             class="text-2xl font-semibold italic text-center text-white">
-                            <a href="#"
+                            <a href="https://www.google.com/search?q=1017studios&rlz=1C1UEAD_enID979ID979&oq=1017studios&aqs=chrome..69i57j0i13i30j0i390i650j69i60l5.2708j0j7&sourceid=chrome&ie=UTF-8#lrd=0x2dd7fa575f7cbbc7:0x9affc781fdebea7,1,,,,"
+                                target="_blank"
                                 class="before:block before:absolute before:-inset-2 before:-skew-y-3 before:bg-[#FFE200] relative inline-block">
                                 <span class="relative text-black font-extrabold">Baca Selengkapnya..</span>
                             </a>
@@ -209,11 +210,10 @@
         </div>
         <div data-aos="zoom-out-up" data-aos-duration="1000"
             class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 place-content-center sm:space-x-6 pt-3 mt-2 aos-init aos-animate">
-            <button
-                class="lg:text-2xl duration-300 hover:scale-105 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
-                fdprocessedid="rdwmjd">
+            <a class="lg:text-2xl duration-300 hover:scale-105 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
+                href="{{url('/kontak')}}">
                 SAYA MAU PESAN !!
-            </button>
+            </a>
         </div>
     </div>
 </section>

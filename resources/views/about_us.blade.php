@@ -43,13 +43,12 @@
                 sesuai dengan kebutuhan
                 pasar.
             </p>
-            <div data-aos="zoom-out-up" data-aos-duration="1000"
+            <div
                 class="flex flex-col sm:flex-row space-y-6 sm:space-y-0 place-content-center sm:space-x-6 pt-3 mt-2 aos-init aos-animate">
-                <button
-                    class="lg:text-2xl duration-300 hover:scale-105 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
-                    fdprocessedid="rdwmjd">
+                <a class="lg:text-2xl duration-300 hover:scale-105 ease-in-out font-extrabold text-center rounded-full transition max-w-full px-6 py-4 bg-[#FFE200] text-black"
+                    href="{{url('/kontak')}}">
                     SAYA MAU PESAN !!
-                </button>
+                </a>
             </div>
         </div>
 

@@ -7,10 +7,11 @@
             <h2 class="lg:text-5xl text-2xl text-[#FFE200] font-extrabold sm:pr-8 xl:pr-12"="">
                 Detail Berita
             </h2>
-            <hr class="rounded" style="height:10;width:150;color:#FFE200;">
+            <hr class="w-48 h-2 my-4 bg-[#FFE200] border-0 rounded md:my-10">
             <div class="m-5">
                 <a rel="noopener noreferrer" href="{{ url()->previous() }}"
-                    class="bg-[#FFE200] hover:bg-[#FFE200] text-black font-bold py-2 px-4 rounded-full p-1 hover:underline"><i class="fa fa-arrow-left" aria-hidden="true"></i>  Back</a>
+                    class="bg-[#FFE200] hover:bg-[#FFE200] text-black font-bold py-2 px-4 rounded-full p-1 hover:underline"><i
+                        class="fa fa-arrow-left" aria-hidden="true"></i> Back</a>
             </div>
             <div class="flex flex-col max-w-6xl mx-auto overflow-hidden rounded object-cover" data-aos="zoom-out-up"
                 data-aos-duration="1000">
@@ -25,14 +26,16 @@
                     <div class="space-y-2">
                         <a rel="noopener noreferrer" href="#"
                             class="inline-block text-2xl font-extrabold sm:text-4xl">{{ $berita->title }}</a>
-                        <div class="flex flex-wrap space-x-2 text-sm pt-4 lg:pt-15 text-black">
+                        @if($tagBerita)
+                        <div class="flex flex-wrap space-x-2 text-sm pt-4 mt-5 lg:pt-15 text-black">
                             <a rel="noopener noreferrer" href="#"
-                                class="bg-black hover:bg-[#1c1c1c] text-white font-bold py-2 px-4 rounded-full p-1 hover:underline">#MambaUI</a>
+                                class="bg-black hover:bg-[#1c1c1c] text-white font-bold py-2 px-4 rounded-full p-1 hover:underline">{{
+                                $tagBerita->name }}</a>
                             <a rel="noopener noreferrer" href="#"
-                                class="bg-black hover:bg-[#1c1c1c] text-white font-bold py-2 px-4 rounded-full p-1 hover:underline">#TailwindCSS</a>
-                            <a rel="noopener noreferrer" href="#"
-                                class="bg-black hover:bg-[#1c1c1c] text-white font-bold py-2 px-4 rounded-full p-1 hover:underline">#Angular</a>
+                                class="bg-black hover:bg-[#1c1c1c] text-white font-bold py-2 px-4 rounded-full p-1 hover:underline">{{
+                                $tagBerita2->name }}</a>
                         </div>
+                        @endif
                         <p class="text-sm text-black">by
                             <a href="#" target="_blank" rel="noopener noreferrer" class="hover:underline text-black">
                                 <span>{{ $berita->author }}</span>
