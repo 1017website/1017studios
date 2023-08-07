@@ -11,7 +11,7 @@
     <meta property="og:url" content="">
     <meta name="keywords" content="">
     <script type="text/javascript" async="" src=""></script>
-    <link rel='icon' type="image/x-icon" href='{{ asset(' assets/img/favicon.ico') }}'>
+    <link rel='icon' type="image/x-icon" href='{{asset('assets/img/favicon.ico')}}'>
     <title>1017 Studios</title>
 
     <!--CSS-->

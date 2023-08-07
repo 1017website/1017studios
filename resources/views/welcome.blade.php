@@ -10,7 +10,7 @@
     <meta property="og:description" content="">
     <meta property="og:url" content="">
     <meta name="keywords" content="">
-    <link rel='icon' type="image/x-icon" href='{{ asset(' assets/img/favicon.ico') }}'>
+    <link rel='icon' type="image/x-icon" href='{{asset('assets/img/favicon.ico')}}'>
     <title>1017 Studios</title>
 
     <!--CSS-->
@@ -120,7 +120,7 @@
         <div id="__layout">
             <div class="min-h-screen font-sans antialiased relative">
                 <div class="relative">
-                    <div class="absolute top-0 left-0 w-full h-[130vh] sm:h-[225vh] lg:h-[100vh] bg-cover"
+                    <div class="absolute top-0 left-0 w-full h-[130vh] sm:h-[225vh] md:h-[100vh] lg:h-[100vh] bg-cover"
                         style="background-image: url({{ asset('assets/img/default-background.jpg') }});">
                     </div>
                     <nav class="hover:shadow-xl sticky z-10 w-full text-neutral-800 hover:bg-[#1c1c1c] duration-500">
@@ -231,7 +231,7 @@
                                 <div
                                     class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden"="">
                                     <div data-aos="fade-right" data-aos-duration="1000"
-                                        class="col-span-12 lg:col-span-6 mt-12 lg:mt-20 space-y-4 sm:space-y-6 px-6 text-center sm:text-left"="">
+                                        class="col-span-12 lg:col-span-6 md:col-span-6 mt-12 lg:mt-20 space-y-4 sm:space-y-6 px-6 text-center sm:text-left"="">
                                         <span data-aos="fade-right" data-aos-once="true"
                                             class="lg:text-3xl text-2xl text-white font-semibold aos-init aos-animate"="">Mengapa
                                             Memilih
@@ -261,7 +261,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="hidden sm:block col-span-12 mt-12 lg:mt-20 lg:col-span-6 place-self-center boat"="">
+                                        class="hidden sm:block col-span-12 mt-12 lg:mt-20 md:col-span-6 lg:col-span-6 place-self-center boat"="">
                                         <div class="lg:w-full lg:place-self-center boat"=""><img data-aos="fade-up"
                                                 data-aos-once="true" src="{{ asset('assets/img/logo.png') }}" alt=""
                                                 class="-mt-30 aos-init aos-animate"="">
@@ -270,12 +270,12 @@
                                 </div>
                             </section>
                             <section
-                                class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0 py-6 pb-20 sm:py-8 rounded-[2.25rem] transform lg:-translate-y-12">
+                                class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0 sm:py-8 rounded-[2.25rem] transform lg:-translate-y-12">
 
                                 <div id="portfolio-home" data-aos="fade-up" data-aos-duration="1000"
-                                    class="flex flex-col flex-wrap sm:flex-row items-center justify-center space-y-6 sm:space-y-0 -mx-4">
+                                    class="flex flex-col flex-wrap md:py-6 sm:flex-row items-center justify-center space-y-6 sm:space-y-0 -mx-4">
                                     <div
-                                        class="group portfolio-item logo relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
+                                        class="group md:py-6 portfolio-item logo relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
                                         <img src="{{ asset('assets/img/default-port-1.jpg') }}"
                                             class="img-fluid object-cover w-full" alt="">
                                         <div
@@ -302,7 +302,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group portfolio-item logo relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
+                                        class="group portfolio md:py-6-item logo relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
                                         <img src="{{ asset('assets/img/default-port-1.jpg') }}" class="img-fluid"
                                             alt="">
                                         <div
@@ -329,7 +329,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group portfolio-item website relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
+                                        class="group portfolio-item md:py-6 website relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
                                         <img src="{{ asset('assets/img/default-port-4.jpg') }}" class="img-fluid"
                                             alt="">
                                         <div
@@ -384,7 +384,7 @@
                                 </div>
                             </section>
 
-                            <section class="w-full my-24"=""
+                            <section class="w-full my-10" 
                                 style="background-image: url({{ asset('assets/img/default-background.jpg') }});background-size: cover;">
                                 <div
                                     class="relative max-w-screen-xl px-4 sm:px-8 pb-20 mx-auto grid gap-x-6 overflow-hidden"="">
@@ -454,7 +454,7 @@
                                             <h3 class="text-4xl font-bold text-center">Desainer dan Developer</h3>
                                             <p class="font-extrabold text-2xl text-center">Senior & Profesional</p>
                                         </div>
-                                        <div data-aos="fade-down-left" data-aos-duration="1000"
+                                        <div data-aos="fade-down-right" data-aos-duration="1000"
                                             class="relative sm:w-1/2 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
                                             <img src="{{ asset('assets/img/default-superior-2.png') }}"
                                                 class="img-fluid" alt="">
@@ -468,7 +468,7 @@
                                             <h3 class="text-4xl font-bold text-center">Konsultasi</h3>
                                             <p class="font-extrabold text-2xl text-center">Gratis & Solutif</p>
                                         </div>
-                                        <div data-aos="fade-up-left" data-aos-duration="1000"
+                                        <div data-aos="fade-up-right" data-aos-duration="1000"
                                             class="relative sm:w-1/2 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
                                             <img src="{{ asset('assets/img/default-superior-4.png') }}"
                                                 class="img-fluid" alt="">
@@ -614,10 +614,10 @@
                                         class="hidden sm:block col-span-12 mt-12 mb-12 lg:mt-20 lg:col-span-6 place-self-center"="">
                                         <div class="w-full place-self-center"=""><img data-aos="fade-up"
                                                 data-aos-once="true" src="{{ asset('assets/img/logo.png') }}" alt=""
-                                                class="-mt-30 aos-init aos-animate"="">
+                                                class="-mt-30 aos-init md:hidden aos-animate"="">
                                         </div>
                                         <div class="mt-7">
-                                            <h3 class="text-xl font-bold text-white text-center">berdiri sejak
+                                            <h3 class="text-xl font-bold text-white md:hidden text-center">berdiri sejak
                                                 2014<br>lebih dari 2000 klien</h3>
                                         </div>
                                     </div>
