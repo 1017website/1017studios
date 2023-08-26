@@ -22,7 +22,7 @@
             </div>
             <details class="dropdown mb-32">
                 <summary id="dropdownSummary"
-                    class="m-1 btn bg-[#FFE200] hover:bg-[#FFE200] text-black font-extrabold rounded-full">Semua<i
+                    class="m-1 btn bg-[#FFE200] hover:bg-[#FFE200] text-black font-extrabold border-none rounded-full">Semua<i
                         class="fa fa-caret-down" aria-hidden="true"></i></summary>
                 <ul
                     class="p-2 shadow menu dropdown-content ease-in-out z-[1] bg-[#1c1c1c] text-white font-bold rounded-box w-52">

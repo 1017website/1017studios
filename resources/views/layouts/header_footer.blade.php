@@ -36,6 +36,26 @@
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
     <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #2d2c2c;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #FFE200;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffe100ee;
+        }
         @keyframes spin {
             0% {
                 transform: rotate(0deg);

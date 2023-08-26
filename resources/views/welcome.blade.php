@@ -31,6 +31,26 @@
     <script type="text/javascript" src="{{ asset('assets/js/function.js') }}"></script>
 
     <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #2d2c2c;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #FFE200;
+            border-radius: 5px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ffe100ee;
+        }
         @keyframes spin {
             0% {
                 transform: rotate(0deg);
@@ -302,9 +322,9 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="group portfolio md:py-6-item logo relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
-                                        <img src="{{ asset('assets/img/default-port-1.jpg') }}" class="img-fluid"
-                                            alt="">
+                                        class="group md:py-6 portfolio-item logo relative sm:w-1/3 overflow-hidden space-y-6 lg:px-8 px-6 lg:py-8 aos-init">
+                                        <img src="{{ asset('assets/img/default-port-1.jpg') }}"
+                                            class="img-fluid object-cover w-full" alt="">
                                         <div
                                             class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#FFE200] font-extrabold lg:text-4xl opacity-0 group-hover:opacity-100 duration-500 h-0 group-hover:bg-opacity-100 group-hover:h-full">
                                             1017 studios
@@ -611,16 +631,16 @@
                             <div class="flex flex-wrap text-left lg:text-left place-content-center">
                                 <div class="w-full lg:w-3/12 px-4">
                                     <div
-                                        class="hidden sm:block col-span-12 mt-12 mb-12 lg:mt-20 lg:col-span-6 place-self-center"="">
-                                        <div class="w-full place-self-center"=""><img data-aos="fade-up"
-                                                data-aos-once="true" src="{{ asset('assets/img/logo.png') }}" alt=""
-                                                class="-mt-30 aos-init md:hidden aos-animate"="">
-                                        </div>
-                                        <div class="mt-7">
-                                            <h3 class="text-xl font-bold text-white md:hidden text-center">berdiri sejak
-                                                2014<br>lebih dari 2000 klien</h3>
-                                        </div>
+                                    class="hidden sm:block col-span-12 mt-12 mb-12 lg:mt-20 lg:col-span-6 place-self-center"="">
+                                    <div class="w-full place-self-center"=""><img data-aos="fade-up"
+                                            data-aos-once="true" src="{{ asset('assets/img/logo.png') }}" alt=""
+                                            class="-mt-30 aos-init aos-animate"="">
                                     </div>
+                                    <div class="mt-7">
+                                        <h3 class="text-xl font-bold text-white text-center">berdiri sejak
+                                            2014<br>lebih dari 2000 klien</h3>
+                                    </div>
+                                </div>
                                 </div>
                                 <div class="w-full lg:w-6/12 px-4 place-self-center">
                                     <div class="flex flex-wrap items-top mb-6">

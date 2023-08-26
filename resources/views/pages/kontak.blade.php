@@ -34,7 +34,7 @@
                         <div class="flex flex-col md:flex-row">
                             <div class="md:mr-2 mb-2 md:mb-0 w-full">
                                 <label for="first_name"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">First
+                                    class="block mb-2 text-sm font-medium text-white dark:text-gray-300">First
                                     Name</label>
                                 <input type="text" name="first_name" id="first_name"
                                     class="input input-bordered input-warning w-full max-w-xs" placeholder="first"
@@ -42,7 +42,7 @@
                             </div>
                             <div class="md:ml-2 w-full">
                                 <label for="last_name"
-                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Last
+                                    class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Last
                                     Name</label>
                                 <input type="text" name="last_name" id="last_name"
                                     class="input input-bordered input-warning w-full max-w-xs" placeholder="last"
@@ -51,14 +51,14 @@
                         </div>
                         <div class="w-full">
                             <label for="email"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
+                                class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Email</label>
                             <input type="email" name="email" id="email"
                                 class="input input-bordered input-warning w-full max-w-xl"
                                 placeholder="example@gmail.com" required>
                         </div>
                         <div class="w-full">
                             <label for="nomor_wa"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nomor
+                                class="block mb-2 text-sm font-medium text-white dark:text-gray-300">Nomor
                                 Telepon/Whatsapp</label>
                             <input type="text" name="nomor_wa" id="nomor_wa"
                                 class="input input-bordered input-warning w-full max-w-xl" placeholder="+62 000 000 000"
@@ -66,7 +66,7 @@
                         </div>
                         <div class="sm:col-span-2">
                             <label for="pesan"
-                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Pesan</label>
+                                class="block mb-2 text-sm font-medium text-white dark:text-gray-400">Pesan</label>
                             <textarea name="pesan" id="pesan" class="textarea textarea-warning w-full"
                                 placeholder="Tinggalkan pesan disini" required></textarea>
                         </div>
